@@ -1,13 +1,11 @@
 package com.cbs.springcourse.models;
 
-import jdk.internal.net.http.common.ImmutableExtendedSSLSession;
-
 import javax.validation.constraints.Email;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.Size;
 
-public class Students {
+public class Student {
     private int id;
 
     @NotEmpty(message = "Name should not be empty")
@@ -22,18 +20,18 @@ public class Students {
     private int age;
 
     @NotEmpty(message = "Phone should not be empty")
-    @Size(min = 15, max = 15, message = "Phone name should be 15 characters long")
+    @Size(min = 13, max = 13, message = "Phone name should be 15 characters long")
     private String phone;
 
     @NotEmpty(message = "Email should not be empty")
     @Email(message = "Email should be valid")
     private String email;
 
-    public Students(){
+    public Student(){
 
     }
 
-    public Students(int id, String name, String lastname, int age, String phone, String email) {
+    public Student(int id, String name, String lastname, int age, String phone, String email) {
         this.id = id;
         this.name = name;
         this.lastname = lastname;

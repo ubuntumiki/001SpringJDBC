@@ -1,4 +1,5 @@
 DROP table Person;
+DROP table Students;
 CREATE TABLE Person(
                        id int PRIMARY KEY,
                        name varchar(100) NOT NULL,
@@ -10,7 +11,7 @@ INSERT INTO person (name, age, email) VALUES ('Taras',23,'rar@gmail.com');
 INSERT INTO person (name, age, email) VALUES ('Grigoriy',33,'grigoriy@gmail.com');
 INSERT INTO person (name, age, email) VALUES ('Paraska',77,'babka@gmail.com');
 
-CREATE TABLE Students(
+CREATE TABLE Student(
                        id int PRIMARY KEY,
                        name varchar(100) NOT NULL,
                        lastname varchar(100) NOT NULL,
